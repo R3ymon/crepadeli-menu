@@ -1,0 +1,43 @@
+<!-- Página de Inicio -->
+<div
+  class="relative h-screen w-screen bg-black overflow-hidden bg-cover bg-center"
+  style="background-image: url('/assets/images/bg/bg.webp')"
+>
+  <!-- Contenido sobre el fondo negro -->
+  <div
+    [ngClass]="{
+      'opacity-0': !isContentVisible,
+      'opacity-100': isContentVisible
+    }"
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center transition-opacity duration-1000 ease-out"
+  >
+    <!-- Logo dorado del restaurante sin glow -->
+    <img
+      src="/assets/images/logo/logo.png"
+      alt="Logo del Restaurante"
+      class="mb-6 w-40 h-auto md:w-56 lg:w-72"
+    />
+
+    <!-- Encabezado principal "MENÚ" con efecto glow en blanco -->
+    <h1
+      class="text-4xl md:text-6xl lg:text-7xl font-playfair text-white menu-glow"
+    >
+      M E N Ú
+    </h1>
+
+    <!-- Descripción en gris claro para menor importancia -->
+    <p class="mt-4 text-xl md:text-2xl font-cinzel text-gray-300"></p>
+
+    <!-- Botón discreto en blanco con borde negro -->
+
+    <a
+      routerLink="/menu-category"
+      class="font-lato mt-8 px-6 py-3 border-2 border-white text-white bg-transparent rounded-lg hover:bg-white hover:text-black transition"
+    >
+      Ver Menú
+    </a>
+  </div>
+
+  <!-- Overlay oscuro opcional (puedes eliminarlo si el fondo es negro) -->
+  <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+</div>
