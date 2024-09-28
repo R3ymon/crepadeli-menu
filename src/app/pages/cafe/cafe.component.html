@@ -1,53 +1,53 @@
-<app-nav-bar></app-nav-bar>
+<div class="container mx-auto px-4 pb-5">
+  <!-- Ancla para regresar al menú anterior -->
+  <a
+    routerLink="/menu-category"
+    class="text-red-400 font-playfair hover:text-gray-200 mb-4 mt-8 inline-block"
+    >&larr; Regresar al menú anterior</a
+  >
 
-<!-- Contenido del menú con fondo negro e imagen de fondo -->
-<div
-  class="pt-16 min-h-screen text-white bg-cover bg-center bg-fixed"
-  style="background-image: url('/assets/images/bg/bgcategory1.webp')"
->
-  <div class="container mx-auto px-4 pb-5">
-    <!-- Ancla para regresar al menú anterior -->
-    <a
-      routerLink="/menu-category"
-      class="text-red-400 font-playfair hover:text-gray-200 mb-4 mt-8 inline-block"
-      >&larr; Regresar al menú anterior</a
+  <h1 class="text-4xl font-bold mb-8 font-playfair">CAFÉ / TÉ</h1>
+
+  <!-- Sección de Café Caliente -->
+  <h2
+    class="text-2xl font-bold mb-4 font-playfair text-center bg-red-400 rounded-md"
+  >
+    CAFÉ CALIENTE
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    <div
+      *ngFor="let cafeCaliente of cafeCalienteItems"
+      class="max-w-sm mx-auto bg-white bg-opacity-5 rounded-xl shadow-md p-4"
     >
-
-    <h1 class="text-4xl font-bold mb-8 font-playfair">CAFÉ / TÉ</h1>
-
-    <!-- Sección de Café Caliente -->
-    <h2 class="text-2xl font-bold mb-4 font-playfair">CAFÉ CALIENTE</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-      <div
-        *ngFor="let cafeCaliente of cafeCalienteItems"
-        class="max-w-sm mx-auto bg-white bg-opacity-5 rounded-xl shadow-md p-4"
-      >
-        <div class="flex justify-between items-center">
-          <h3 class="text-xl font-playfair text-white">
-            {{ cafeCaliente.nombre }}
-          </h3>
-          <p class="text-red-400 text-lg font-lato">
-            {{ cafeCaliente.precio | currency }}
-          </p>
-        </div>
+      <div class="flex justify-between items-center">
+        <h3 class="text-xl font-playfair text-black font-semibold">
+          {{ cafeCaliente.nombre }}
+        </h3>
+        <p class="text-red-400 text-lg font-lato">
+          {{ cafeCaliente.precio | currency }}
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- Sección de Café Helado -->
-    <h2 class="text-2xl font-bold mb-4 font-playfair">CAFÉ HELADO</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div
-        *ngFor="let cafeHelado of cafeHeladoItems"
-        class="max-w-sm mx-auto bg-white bg-opacity-5 rounded-xl shadow-md p-4"
-      >
-        <div class="flex justify-between items-center">
-          <h3 class="text-xl font-playfair text-white">
-            {{ cafeHelado.nombre }}
-          </h3>
-          <p class="text-red-400 text-lg font-lato">
-            {{ cafeHelado.precio | currency }}
-          </p>
-        </div>
+  <!-- Sección de Café Helado -->
+  <h2
+    class="text-2xl font-bold mb-4 font-playfair text-center bg-red-400 rounded-md"
+  >
+    CAFÉ HELADO
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div
+      *ngFor="let cafeHelado of cafeHeladoItems"
+      class="max-w-sm mx-auto bg-white bg-opacity-5 rounded-xl shadow-md p-4"
+    >
+      <div class="flex justify-between space-x-2 items-center">
+        <h3 class="text-xl font-playfair font-semibold text-black">
+          {{ cafeHelado.nombre }}
+        </h3>
+        <p class="text-red-400 text-lg font-lato">
+          {{ cafeHelado.precio | currency }}
+        </p>
       </div>
     </div>
   </div>

@@ -1,20 +1,48 @@
 <nav
   id="navbar"
   [ngClass]="{
-    'bg-black  shadow-lg': isScrolled
+    'bg-red-400': !isScrolled,
+    'bg-black': isScrolled
   }"
   class="fixed top-0 left-0 w-full z-50 transition-all duration-300 overflow-x-hidden"
 >
-  <div class="container mx-auto px-4 py-2 flex justify-center max-w-full">
-    <!-- Logo centrado en pantallas pequeñas, alineado a la izquierda en pantallas grandes -->
-    <div class="w-1/3 lg:w-auto lg:flex lg:justify-start">
+  <div
+    class="container mx-auto px-4 py-2 flex items-center justify-between max-w-full"
+  >
+    <!-- Botón de hamburguesa a la izquierda en pantallas pequeñas -->
+    <div class="flex items-center justify-start w-1/3 lg:hidden">
+      <app-hamburger></app-hamburger>
+    </div>
+
+    <!-- Logo centrado -->
+    <div class="w-full lg:w-auto lg:flex lg:justify-center">
       <a routerLink="/">
         <img
           src="/assets/images/logo/logo.png"
           alt="Logo"
-          class="h-12 md:h-16 lg:h-20 mx-auto lg:ml-0 rounded"
+          class="h-10 mx-auto"
         />
       </a>
+    </div>
+
+    <!-- Icono de teléfono y número solo en pantallas pequeñas -->
+    <div class="flex items-center space-x-2 md:hidden w-1/3 justify-end">
+      <a href="tel:+526672145505" class="flex items-center">
+        <!-- Número de teléfono -->
+        <span class="text-center font-cormorant text-pink-400 text-sm"></span>
+      </a>
+    </div>
+
+    <!-- Links para pantallas grandes, alineados a la derecha -->
+    <div
+      class="hidden lg:flex lg:justify-end space-x-6 font-serif text-white w-1/3"
+    >
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=526672589696&text&type=phone_number&app_absent=0"
+        class="font-playfair hover:underline text-white"
+        >Ordena ya</a
+      >
     </div>
   </div>
 </nav>

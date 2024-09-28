@@ -1,82 +1,74 @@
-<app-nav-bar></app-nav-bar>
-<!-- Contenido del menú con fondo negro e imagen de fondo -->
+<div class="container mx-auto px-4 pb-5">
+  <!-- Ancla para regresar al menú anterior -->
+  <a
+    routerLink="/menu-category"
+    class="text-red-400 font-notoserif hover:text-gray-200 mb-4 mt-8 inline-block"
+    >&larr; Regresar al menú anterior</a
+  >
 
-<div
-  class="pt-16 min-h-screen text-white bg-cover bg-center bg-fixed"
-  style="background-image: url('/assets/images/bg/bgcategory1.webp')"
->
-  <div class="container mx-auto px-4 pb-5">
-    <!-- Ancla para regresar al menú anterior -->
-    <a
-      routerLink="/menu-category"
-      class="text-red-400 font-notoserif hover:text-gray-200 mb-4 mt-8 inline-block"
-      >&larr; Regresar al menú anterior</a
+  <h1 class="text-4xl mb-8 font-playfair">CREPAS</h1>
+
+  <!-- Tarjetas de los platillos -->
+  <div class="flex flex-col space-y-4">
+    <div
+      *ngFor="let platillo of platillos"
+      class="bg-white bg-opacity-5 p-4 border-2 border-black rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
+      (click)="abrirModal(platillo)"
     >
+      <!-- Imagen del platillo con etiqueta -->
+      <div class="w-1/2 relative">
+        <img
+          loading="lazy"
+          [src]="platillo.imagen"
+          alt="{{ platillo.nombre }}"
+          class="w-full h-auto rounded-lg object-cover"
+        />
 
-    <h1 class="text-4xl font-bold mb-8 font-playfair">CREPAS</h1>
+        <!-- Etiqueta del platillo - Posicionamiento responsive -->
+        <span
+          class="block text-center lg:absolute lg:bottom-2 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-xs px-2 py-1 font-cinzel rounded-full mt-10 lg:mt-0"
+          *ngIf="platillo.etiqueta"
+          [ngClass]="{
+            'bg-green-500': platillo.etiqueta === 'Vegetariano',
+            'bg-blue-500': platillo.etiqueta === 'Nuevo',
+            'bg-yellow-500 glow-animate': platillo.etiqueta === 'Recomendado',
+            'bg-red-500 fire-animate': platillo.etiqueta === 'Mas vendido'
+          }"
+        >
+          {{ platillo.etiqueta }}
+        </span>
+      </div>
 
-    <!-- Tarjetas de los platillos -->
-    <div class="flex flex-col space-y-4">
-      <div
-        *ngFor="let platillo of platillos"
-        class="bg-white bg-opacity-5 p-4 rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
-        (click)="abrirModal(platillo)"
-      >
-        <!-- Imagen del platillo con etiqueta -->
-        <div class="w-1/2 relative">
-          <img
-            loading="lazy"
-            [src]="platillo.imagen"
-            alt="{{ platillo.nombre }}"
-            class="w-full h-auto rounded-lg object-cover"
-          />
+      <!-- Información del platillo -->
+      <div class="w-1/2 pl-4">
+        <h2 class="text-2xl font-bold font-playfair">{{ platillo.nombre }}</h2>
+        <p class="text-black text-sm mt-2 font-lato">
+          {{ platillo.descripcion }}
+        </p>
 
-          <!-- Etiqueta del platillo - Posicionamiento responsive -->
-          <span
-            class="block text-center lg:absolute lg:bottom-2 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-xs px-2 py-1 font-cinzel rounded-full mt-10 lg:mt-0"
-            *ngIf="platillo.etiqueta"
-            [ngClass]="{
-              'bg-green-500': platillo.etiqueta === 'Vegetariano',
-              'bg-blue-500': platillo.etiqueta === 'Nuevo',
-              'bg-yellow-500 glow-animate': platillo.etiqueta === 'Recomendado',
-              'bg-red-500 fire-animate': platillo.etiqueta === 'Mas vendido'
-            }"
-          >
-            {{ platillo.etiqueta }}
-          </span>
-        </div>
-
-        <!-- Información del platillo -->
-        <div class="w-1/2 pl-4">
-          <h2 class="text-2xl font-playfair">{{ platillo.nombre }}</h2>
-          <p class="text-gray-300 text-sm mt-2 font-lato">
-            {{ platillo.descripcion }}
+        <span class="text-red-400 text-lg font-lato mt-2">{{
+          platillo.precio | currency
+        }}</span>
+        <br />
+        <span class="text-red-400 text-lg font-lato mt-2"
+          >{{ platillo.precio2 | currency }}
+          <p class="text-white font-lato text-sm">
+            {{ platillo.descripcion2 }}
           </p>
-
-          <span class="text-red-400 text-lg font-lato mt-2">{{
-            platillo.precio | currency
-          }}</span>
-          <br />
-          <span class="text-red-400 text-lg font-lato mt-2"
-            >{{ platillo.precio2 | currency }}
-            <p class="text-white font-lato text-sm">
-              {{ platillo.descripcion2 }}
-            </p>
-          </span>
-        </div>
+        </span>
       </div>
-      <div class="container mx-auto px-4 py-8">
-        <h2 class="text-3xl font-playfair mb-4">Ingredientes</h2>
+    </div>
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-3xl font-playfair mb-4">Ingredientes</h2>
 
-        <ol class="flex list-disc flex-wrap gap-6">
-          <li
-            *ngFor="let ingrediente of ingredientes"
-            class="mb-2 text-lg font-lato"
-          >
-            {{ ingrediente }}
-          </li>
-        </ol>
-      </div>
+      <ol class="flex list-disc flex-wrap gap-8">
+        <li
+          *ngFor="let ingrediente of ingredientes"
+          class="mb-2 text-lg font-lato text-red-400"
+        >
+          {{ ingrediente }}
+        </li>
+      </ol>
     </div>
   </div>
 </div>
@@ -87,7 +79,7 @@
   class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
 >
   <div
-    class="bg-black p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 max-w-4xl"
+    class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 max-w-4xl"
   >
     <!-- Contenedor de la imagen con posición relativa -->
     <div class="relative">
@@ -119,7 +111,7 @@
     <!-- Botón para cerrar el modal -->
     <button
       (click)="cerrarModal()"
-      class="mt-6 px-4 py-2 font-sans border-2 border-white hover:bg-opacity-30 transition rounded text-white"
+      class="mt-6 px-4 py-2 font-playfair border-2 border-black hover:bg-opacity-30 transition rounded text-black"
     >
       Cerrar
     </button>

@@ -1,32 +1,91 @@
 <app-nav-bar></app-nav-bar>
 
-<div
-  class="relative bg-black px-4 py-20 pb-10 bg-cover bg-center"
-  style="background-image: url('/assets/images/bg/bgcategory1.webp')"
->
-  <!-- Overlay negro global -->
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<!-- Añadir padding-top para que el navbar fijo no cubra el carrusel -->
+<div class="pt-16 md:pt-24 min-h-screen flex flex-col justify-between">
+  <app-carrusel></app-carrusel>
 
-  <div class="relative container mx-auto">
-    <!-- Generar dinámicamente las tarjetas de categorías -->
-    <a
-      *ngFor="let categoria of categorias"
-      [routerLink]="categoria.ruta"
-      class="block relative border-2 border-black font-playfair w-full h-32 lg:h-64 mb-6 lg:mb-8 lg:w-1/2 lg:mx-auto rounded-lg overflow-hidden"
-      [ngClass]="{ 'borde-animado': categoria.etiqueta === 'Mas vendido' }"
-    >
-      <img
-        [src]="categoria.imagen"
-        [alt]="categoria.nombre"
-        class="absolute w-full h-full object-cover"
-      />
-      <div
-        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-      >
-        <h2 class="text-white text-2xl menu-glow">
-          {{ categoria.nombre }}
-        </h2>
+  <div class="relative bg-white px-4 py-12">
+    <div class="relative container mx-auto">
+      <!-- Generar dinámicamente las tarjetas de categorías -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <a
+          *ngFor="let categoria of categorias"
+          [routerLink]="categoria.ruta"
+          class="block bg-white border-2 border-black font-playfair p-4 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+        >
+          <!-- SVG arriba del nombre, cargado dinámicamente desde el archivo TS -->
+          <div class="flex justify-center mb-2">
+            <img
+              [src]="categoria.imagen"
+              alt="{{ categoria.nombre }} icono"
+              class="h-10 w-10"
+            />
+          </div>
+
+          <!-- Nombre de la categoría -->
+          <h2 class="text-gray-900 text-lg font-playfair">
+            {{ categoria.nombre }}
+          </h2>
+        </a>
       </div>
-    </a>
+    </div>
   </div>
 </div>
+
+<div class="text-center font-lato lg px-10 mb-2 mt-10">
+  <p>Precios en Pesos Mexicanos con IVA del 16% incluido.</p>
+</div>
+<!-- Horarios -->
+<div
+  #animateSection
+  class="text-center text-lg lg:text-xl md:text-xl py-6 space-y-4 bg-red-400 text-black font-lato opacity-0 transition-all duration-700 ease-in-out"
+>
+  <span class="font-playfair font-semibold">HORARIO</span>
+  <p>Lunes a Domingo</p>
+  <p>5:30 am a 11:30 pm</p>
+</div>
+
+<!-- Sección Ubicación animada al hacer scroll -->
+<div
+  #animateSection
+  id="ubicacion"
+  class="py-16 opacity-0 transition-all duration-700 ease-in-out"
+>
+  <div class="container mx-auto px-4 md:px-8 max-w-full">
+    <!-- Contenedor del mapa y el contenido alineado -->
+    <div class="flex flex-col md:flex-row items-center">
+      <!-- Mapa de Culiacán -->
+      <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.376613774474!2d-107.37862562404867!3d24.816791047002457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcd7c4d5b1dbbb%3A0xeacdef34ec38c737!2sCREPADELI%20LAS%20QUINTAS!5e0!3m2!1ses-419!2smx!4v1727491659066!5m2!1ses-419!2smx"
+          width="100%"
+          height="300"
+          class="rounded-lg shadow-lg w-full h-auto"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Contenido textual con la dirección -->
+      <div
+        id="locate"
+        class="w-full md:w-1/2 md:pl-12 text-center md:text-left"
+      >
+        <h2 class="text-3xl md:text-4xl font-playfair mb-4">
+          Nuestra Ubicación
+        </h2>
+        <p class="text-lg font-lato mb-6">
+          "Nos encontramos en Culiacán, ofrecemos una experiencia gastronómica
+          excepcional, en un ambiente cálido y acogedor que invita a disfrutar
+          de momentos únicos."
+        </p>
+        <p class="text-lg font-lato">
+          <strong>Dirección:</strong> Cdad. de puebla 1318, Las Quintas, 80060
+          Culiacán, Sinaloa, México.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
