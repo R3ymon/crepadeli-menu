@@ -18,7 +18,7 @@
     <!-- Tarjetas originales de platillos -->
     <div
       *ngFor="let platillo of platillos"
-      class="bg-white bg-opacity-5 border-2 border-black p-4 rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
+      class="bg-white bg-opacity-5 shadow-lg rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
       (click)="abrirModal(platillo)"
     >
       <!-- Imagen del platillo con etiqueta -->

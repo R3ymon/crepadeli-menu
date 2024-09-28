@@ -25,27 +25,27 @@ export class EntradasComponent {
       nombre: 'SAMPLER',
       descripcion:
         'Dedos de queso, aros de cebolla, papas a la francesa y 240gr de tiras de pollo (BBQ, Buffalo o Mango habenero)',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/carrusel/sample.webp',
       precio: 220,
     },
     {
       nombre: 'PAPAS PREPARADAS',
       descripcion:
         'Papas fritas en rodajas, sazonadas con salsa picante, limón y soya.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/images/entradas/papas.webp',
       precio: 69,
     },
     {
       nombre: 'CHAMPIÑONES AL AJILLO',
       descripcion:
         'Champiñones salteados en mantequilla, sazonado con ajo y chile',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/images/entradas/champi.webp',
       precio: 87,
     },
     {
       nombre: 'ORDEN DE PAN',
       descripcion: 'Pan sesgado sazonado',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/images/entradas/pan.webp',
       precio: 55,
     },
     {
@@ -59,7 +59,7 @@ export class EntradasComponent {
       nombre: 'TAPAS',
       descripcion:
         'Tapas de pan con queso acompañadas de 1 topping de tu eleccion (Pepperoni, jamón, salami, champiñon o chorizo)',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/images/entradas/tapas.webp',
       precio: 97,
     },
     {
@@ -79,7 +79,7 @@ export class EntradasComponent {
       nombre: 'TIRAS DE PECHUGA',
       descripcion:
         'BBQ o Buffalo, acompañadas de salsa ranch y tiras de zanahoria.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/images/entradas/boneless.webp',
       precio: 140,
     },
     {

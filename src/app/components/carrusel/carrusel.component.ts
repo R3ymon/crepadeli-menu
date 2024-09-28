@@ -10,9 +10,13 @@ import { Component } from '@angular/core';
 })
 export class CarruselComponent {
   images: string[] = [
-    '/assets/images/bg-category/baguette.webp',
-    '/assets/images/bg-category/hamburguer.webp',
-    '/assets/images/bg-category/pizza.webp',
+    '/assets/images/carrusel/ensaladas2.webp',
+    '/assets/images/carrusel/picresa.webp',
+    '/assets/images/carrusel/ensaladapasta.webp',
+    '/assets/images/carrusel/frapecrepa.webp',
+    '/assets/images/carrusel/ensaladas1.webp',
+    '/assets/images/carrusel/frapefresa.webp',
+    '/assets/images/carrusel/sample.webp',
     // Añade más imágenes según sea necesario
   ];
 

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLinkWithHref } from '@angular/router';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
+import { CarruselComponent } from '../../components/carrusel/carrusel.component';
 
 interface Platillo {
   nombre: string; // Nombre del platillo
@@ -17,7 +18,12 @@ interface Platillo {
 @Component({
   selector: 'app-crepasdulces',
   standalone: true,
-  imports: [CommonModule, RouterLinkWithHref, NavBarComponent],
+  imports: [
+    CommonModule,
+    RouterLinkWithHref,
+    NavBarComponent,
+    CarruselComponent,
+  ],
   templateUrl: './crepasdulces.component.html',
   styleUrl: './crepasdulces.component.css',
 })
@@ -27,7 +33,7 @@ export class CrepasdulcesComponent {
       nombre: 'CREPA DULCE',
       descripcion: '¡Armala a tu gusto!, incluye hasta 4 ingredientes.',
 
-      imagen: '/assets/images/bg-category/crepadulce.webp',
+      imagen: '/assets/images/images/crepasdulces/crepa1.webp',
       precio: 84,
     },
 

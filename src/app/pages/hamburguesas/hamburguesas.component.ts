@@ -28,7 +28,7 @@ export class HamburguesasComponent {
       descripcion:
         '240gr de carne de res, queso, lechuga, tomate, cebolla y aguacate.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/images/hamburger/clasica.webp',
       precio: 110,
     },
     {

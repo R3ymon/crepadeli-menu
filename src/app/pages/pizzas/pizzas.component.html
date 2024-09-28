@@ -10,14 +10,14 @@
 
   <!-- Card principal de pizza -->
   <div
-    class="max-w-sm mx-auto bg-white border-2 border-black mb-4 bg-opacity-5 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    class="max-w-sm mx-auto bg-white shadow-lg mb-4 bg-opacity-5 rounded-xl overflow-hidden md:max-w-2xl"
   >
     <div class="md:flex">
       <!-- Imagen de la pizza -->
       <div class="md:flex-shrink-0">
         <img
           class="h-48 w-full object-cover md:w-48"
-          src="/assets/images/bg-category/pizza.webp"
+          src="/assets/images/images/pizzas/pizzabg.webp"
           alt="Pizza"
         />
       </div>
@@ -67,7 +67,7 @@
   <div class="flex flex-col space-y-4">
     <div
       *ngFor="let platillo of platillos"
-      class="bg-white bg-opacity-5 border-2 border-black p-4 rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
+      class="bg-white bg-opacity-5 shadow-lg p-4 rounded-lg flex items-center cursor-pointer hover:border hover:border-white transition-all duration-300"
       (click)="abrirModal(platillo)"
     >
       <!-- Imagen del platillo con etiqueta -->

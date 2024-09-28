@@ -8,6 +8,41 @@
 
   <h1 class="text-4xl font-bold mb-8 font-playfair">BEBIDAS / SMOOTHIES</h1>
 
+  <div class="relative w-full max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto">
+    <!-- Contenedor del carrusel -->
+    <div class="overflow-hidden">
+      <div class="relative w-full h-60 md:h-80 lg:h-96">
+        <!-- Ajuste de altura aquí para diferentes tamaños de pantalla -->
+        <img
+          *ngFor="let image of images; let i = index"
+          [src]="image"
+          alt="Imagen del carrusel"
+          class="absolute w-full h-full object-contain transition-opacity duration-1000"
+          [ngClass]="{
+            'opacity-100': currentIndex === i,
+            'opacity-0': currentIndex !== i
+          }"
+        />
+      </div>
+    </div>
+
+    <!-- Controles opcionales del carrusel -->
+    <div class="absolute inset-0 flex justify-between items-center px-4">
+      <button
+        (click)="prevImage()"
+        class="bg-black bg-opacity-50 text-white px-3 py-2 rounded"
+      >
+        &#10094;
+      </button>
+      <button
+        (click)="nextImage()"
+        class="bg-black bg-opacity-50 text-white px-3 py-2 rounded"
+      >
+        &#10095;
+      </button>
+    </div>
+  </div>
+
   <!-- Card principal de pizza -->
   <div
     class="max-w-sm mx-auto bg-white mb-4 bg-opacity-5 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
@@ -105,6 +140,7 @@
       </div>
     </div>
   </div>
+
   <!-- Card principal de pizza -->
   <div
     class="max-w-sm mx-auto bg-white mb-4 bg-opacity-5 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
@@ -113,8 +149,8 @@
       <!-- Imagen de la pizza -->
       <div class="md:flex-shrink-0">
         <img
-          class="h-48 w-full object-cover md:w-48"
-          src="/assets/images/bg-category/bebidas.webp"
+          class="h-48 w-full object-contain md:w-48"
+          src="/assets/images/images/bebidas/bebidas bg.webp"
           alt="bebidas"
         />
       </div>

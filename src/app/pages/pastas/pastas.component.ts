@@ -41,14 +41,14 @@ export class PastasComponent {
       nombre: 'BOLOGNESA',
       descripcion: 'Spaguetti con salsa de carne molida y tomate.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/images/pastas/bolognesa.webp',
       precio: 150,
     },
     {
       nombre: 'LASAÑA',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/images/pastas/lasagna.webp',
       precio: 160,
     },
     {
@@ -64,7 +64,7 @@ export class PastasComponent {
       descripcion:
         'Spaguetti, crema sazonada, tocino, tomate, camaron y albahaca.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/images/pastas/alfredo.webp',
       precio: 160,
     },
     {

@@ -91,7 +91,7 @@ export class PizzasComponent {
       nombre: 'BBQ CON BONELESS',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/images/pizzas/boneless.webp',
       precio: 245,
       precio2: 210,
     },
