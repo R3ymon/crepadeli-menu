@@ -28,7 +28,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, queso, frituras de maiz, pico de gallo, pollo y aderezo de chipotle.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 149,
     },
     {
@@ -36,7 +36,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, queso, frituras de maíz, aguacate, pepino, pollo y aderezo de cilantro.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 145,
     },
     {
@@ -44,7 +44,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, parmesano, pollo, crutones y aderezo césar.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 139,
     },
     {
@@ -52,7 +52,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, tomate, queso, aguacate, fritura de maíz, pepino, pollo y aderezo ranch.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 145,
     },
     {
@@ -60,7 +60,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de  lechugas, pollo, pimiento rojo y amarillo, tomate, queso de cabra, fresa, nuez garapiñada, manzana y aderezo ranch.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 144,
       precio2: 159,
       descripcion2: 'Con camarón',
@@ -70,7 +70,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, pollo, pimiento rojo y amarillo, tomate, queso de cabra, fresa, nuez garapiñada, manzana y aderezo ranch.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 159,
     },
     {
@@ -78,7 +78,7 @@ export class EnsaldasComponent {
       descripcion:
         'Mix de lechugas, pollo, crutones, pimientos, queso de cabra, tomate, piña a la plancha, nuez garapiñada y aderezo de la casa.',
 
-      imagen: '/assets/images/bg-category/salad.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 159,
     },
 

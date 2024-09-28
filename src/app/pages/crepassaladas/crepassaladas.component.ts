@@ -27,21 +27,21 @@ export class CrepassaladasComponent {
       nombre: 'CHERA',
       descripcion: 'Carne arrachera, queso, guacamlo y pico de gallo',
 
-      imagen: '/assets/images/bg-category/crepasalada.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 127,
     },
     {
       nombre: 'MEXICANA',
       descripcion: 'Queso, jalapeño, chorizo y aguacate.',
 
-      imagen: '/assets/images/bg-category/crepasalada.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 107,
     },
     {
       nombre: 'ARGENTINA',
       descripcion: 'Queso, salchicha argentina guisada en salsa pesto.',
 
-      imagen: '/assets/images/bg-category/crepasalada.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 107,
     },
     {
@@ -49,7 +49,7 @@ export class CrepassaladasComponent {
       descripcion:
         'Pollo, champiñones salteados, tomate deshidratado, salsa pesto cremosa y queso.',
 
-      imagen: '/assets/images/bg-category/crepasalada.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 107,
     },
 

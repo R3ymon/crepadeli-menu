@@ -27,14 +27,14 @@ export class PastasComponent {
       nombre: 'BURRO',
       descripcion: 'Spaguetti sazonado, salteado con mantequilla.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 85,
     },
     {
       nombre: 'ARRABIATA',
       descripcion: 'Spaguetti con salsa de tomate, tocino y chile de árbol.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 120,
     },
     {
@@ -56,7 +56,7 @@ export class PastasComponent {
       descripcion:
         'Spaguetti, crema sazonada, tocino, tomate. pollo y albahaca.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 145,
     },
     {
@@ -71,14 +71,14 @@ export class PastasComponent {
       nombre: 'CREPA DELI',
       descripcion: 'Spaguetti con champiñones, chile de árbol, tomate y tocino',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 120,
     },
     {
       nombre: 'PESTO',
       descripcion: 'Spaguetti sazonado, pollo y salsa pesto cremosa.',
 
-      imagen: '/assets/images/bg-category/pasta.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 155,
     },
 

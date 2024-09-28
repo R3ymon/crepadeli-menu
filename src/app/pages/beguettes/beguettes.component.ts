@@ -27,7 +27,7 @@ export class BeguettesComponent {
       nombre: 'BAGUETTE ARRACHERA',
       descripcion: 'Arrachera, queso, tomate, lechuga y aguacate.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 155,
     },
     {
@@ -35,28 +35,28 @@ export class BeguettesComponent {
       descripcion:
         'Tocino, jamón, salami, pepperoni, queso, lechuga y jitomate.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 145,
     },
     {
       nombre: 'SALAMI',
       descripcion: 'Queso, salami, tomate, pepinillos, lechuga y aceitunas.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 140,
     },
     {
       nombre: 'JAMÓN',
       descripcion: 'Queso, jamón, lechuga, tomate, aceitunas y pepinillos.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 140,
     },
     {
       nombre: 'VEGETARIANO',
       descripcion: 'Queso, lechuga, tomate, pepinillos, aceitunas y aguacate.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 99,
     },
     {
@@ -64,7 +64,7 @@ export class BeguettesComponent {
       descripcion:
         '120gr de pollo a la plancha, queso, lechuga, tomate, cebolla y aderezo BBQ.',
 
-      imagen: '/assets/images/bg-category/baguette.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 150,
     },
 

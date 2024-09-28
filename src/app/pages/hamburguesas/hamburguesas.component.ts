@@ -36,7 +36,7 @@ export class HamburguesasComponent {
       descripcion:
         '240gr de carne de res, queso, pepperoni, salami, tomate, cebolla y lechuga.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 119,
     },
     {
@@ -44,7 +44,7 @@ export class HamburguesasComponent {
       descripcion:
         '240gr de carne de res, queso, piña, jamón, tomate, cebolla y lechuga.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 119,
     },
     {
@@ -52,7 +52,7 @@ export class HamburguesasComponent {
       descripcion:
         '120gr de pollo a la plancha, queso, lechuga, tomate, y cebolla.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 119,
     },
     {
@@ -60,7 +60,7 @@ export class HamburguesasComponent {
       descripcion:
         '120gr de pollo a la plancha, queso, lechuga, tomate, cebolla y aderezo buffalo.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 139,
     },
     {
@@ -68,7 +68,7 @@ export class HamburguesasComponent {
       descripcion:
         '120gr de pollo a la plancha, queso, lechuga, tomate, cebolla y aderezo BBQ.',
 
-      imagen: '/assets/images/bg-category/hamburguer.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 139,
     },
 

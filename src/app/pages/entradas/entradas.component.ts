@@ -52,7 +52,7 @@ export class EntradasComponent {
       nombre: 'ROLLOS DE JAMÓN SERRANO',
       descripcion:
         'Rollos de jamón serrano con queso en reduccíon de bálsamico.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 140,
     },
     {
@@ -66,12 +66,12 @@ export class EntradasComponent {
       nombre: 'QUESO CREPADELI',
       descripcion:
         'Queso fundido acompañado de nuestra salsa especial y pan de la casa.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 105,
     },
     {
       nombre: 'HUMMUS',
-      descripcion: 'Pure de garbanzo, ajo, oliva, acompañado de pan pita.',
+      descripcion: '/assets/images/logo/logorojo.webp',
       imagen: '/assets/images/bg-category/entradas.webp',
       precio: 80,
     },
@@ -86,14 +86,14 @@ export class EntradasComponent {
       nombre: 'DELI ARRACHERA',
       descripcion:
         '400gr de arrachera bañada en una salsa a base de pimienta. Acompañada de papas gajo y ensadala fresca.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 220,
     },
     {
       nombre: 'PAPAS ESPECIALES',
       descripcion:
         '300gr de papas bañadas en salsa cremosa de la casa con queso y topping de tocino.',
-      imagen: '/assets/images/bg-category/entradas.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 119,
     },
     // Agrega más platillos aquí

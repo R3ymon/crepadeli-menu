@@ -27,7 +27,7 @@ export class PizzasComponent {
       nombre: 'ARRACHERA',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 230,
       precio2: 195,
     },
@@ -35,7 +35,7 @@ export class PizzasComponent {
       nombre: 'OSTIONES AHUMADOS',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 199,
       precio2: 164,
     },
@@ -43,7 +43,7 @@ export class PizzasComponent {
       nombre: 'CAMARÓN',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 249,
       precio2: 214,
     },
@@ -51,7 +51,7 @@ export class PizzasComponent {
       nombre: 'ALFREDO CON POLLO',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 210,
       precio2: 175,
     },
@@ -59,7 +59,7 @@ export class PizzasComponent {
       nombre: 'ALFREDO CON CAMARÓN',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 245,
       precio2: 210,
     },
@@ -67,7 +67,7 @@ export class PizzasComponent {
       nombre: 'JAMÓN SERRANO',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 255,
       precio2: 220,
     },
@@ -75,7 +75,7 @@ export class PizzasComponent {
       nombre: 'BBQ c/ POLLO A LA PLANCHA',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 230,
       precio2: 195,
     },
@@ -83,7 +83,7 @@ export class PizzasComponent {
       nombre: 'BUFFALO c/ POLLO A LA PLANCHA',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 230,
       precio2: 195,
     },
@@ -99,7 +99,7 @@ export class PizzasComponent {
       nombre: 'BUFFALO CON BONESLESS',
       descripcion: '',
 
-      imagen: '/assets/images/bg-category/pizza.webp',
+      imagen: '/assets/images/logo/logorojo.webp',
       precio: 245,
       precio2: 210,
     },
