@@ -71,7 +71,7 @@ export class EntradasComponent {
     },
     {
       nombre: 'HUMMUS',
-      descripcion: '/assets/images/logo/logorojo.webp',
+      descripcion: 'Pure de garbanzo, ajo, oliva, acompañado de pan pita',
       imagen: '/assets/images/bg-category/entradas.webp',
       precio: 80,
     },
