@@ -11,7 +11,7 @@
         <a
           *ngFor="let categoria of categorias"
           [routerLink]="categoria.ruta"
-          class="block bg-white border-2 border-black font-playfair p-4 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          class="block bg-white font-playfair p-4 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
         >
           <!-- SVG arriba del nombre, cargado dinámicamente desde el archivo TS -->
           <div class="flex justify-center mb-2">
@@ -42,7 +42,7 @@
 >
   <span class="font-playfair font-semibold">HORARIO</span>
   <p>Lunes a Domingo</p>
-  <p>5:30 am a 11:30 pm</p>
+  <p>5:30 pm a 11:30 pm</p>
 </div>
 
 <!-- Sección Ubicación animada al hacer scroll -->

@@ -25,24 +25,31 @@
       </a>
     </div>
 
-    <!-- Icono de teléfono y número solo en pantallas pequeñas -->
-    <div class="flex items-center space-x-2 md:hidden w-1/3 justify-end">
-      <a href="tel:+526672145505" class="flex items-center">
-        <!-- Número de teléfono -->
-        <span class="text-center font-cormorant text-pink-400 text-sm"></span>
-      </a>
-    </div>
-
-    <!-- Links para pantallas grandes, alineados a la derecha -->
-    <div
-      class="hidden lg:flex lg:justify-end space-x-6 font-serif text-white w-1/3"
-    >
+    <!-- Íconos a la derecha -->
+    <div class="flex items-center space-x-4 w-1/3 justify-end">
+      <!-- Ícono de WhatsApp -->
       <a
+        href="https://wa.me/5216674918032"
         target="_blank"
-        href="https://api.whatsapp.com/send/?phone=526672589696&text&type=phone_number&app_absent=0"
-        class="font-playfair hover:underline text-white"
-        >Ordena ya</a
+        rel="noopener noreferrer"
+        class="block"
       >
+        <img
+          src="/assets/images/svg/whatsapp.svg"
+          alt="WhatsApp"
+          class="h-6 w-6"
+        />
+      </a>
+
+      <!-- Ícono de Teléfono -->
+      <a href="tel:+5216672589696" class="block">
+        <!-- Reemplaza con tu número de teléfono -->
+        <img
+          src="/assets/images/svg/phone.svg"
+          alt="Teléfono"
+          class="h-6 w-6"
+        />
+      </a>
     </div>
   </div>
 </nav>
