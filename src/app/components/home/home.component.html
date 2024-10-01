@@ -1,7 +1,6 @@
 <!-- Página de Inicio -->
 <div
-  class="relative h-screen w-screen bg-black overflow-hidden bg-cover bg-center"
-  style="background-image: url('/assets/images/bg/bg1.webp')"
+  class="relative h-screen w-screen bg-[url('/assets/images/bg/MENU.jpg')] bg-black overflow-hidden bg-cover bg-center md:bg-[url('/assets/images/bg/MENU.jpg')] lg:bg-[url('/assets/images/bg/menuxl.jpg')]"
 >
   <!-- Contenido sobre el fondo negro -->
   <div
@@ -9,7 +8,7 @@
       'opacity-0': !isContentVisible,
       'opacity-100': isContentVisible
     }"
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center transition-opacity duration-1000 ease-out"
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center transition-opacity duration-1000 ease-out transform -translate-y-32"
   >
     <!-- Logo dorado del restaurante sin glow -->
     <img
@@ -29,7 +28,6 @@
     <p class="mt-4 text-xl md:text-2xl font-cinzel text-gray-300"></p>
 
     <!-- Botón discreto en blanco con borde negro -->
-
     <a
       routerLink="/menu-category"
       class="font-lato mt-8 px-6 py-3 border-2 border-white text-white bg-transparent rounded-lg hover:bg-white hover:text-black transition"

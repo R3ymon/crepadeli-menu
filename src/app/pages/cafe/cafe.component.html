@@ -2,7 +2,7 @@
   <!-- Ancla para regresar al menú anterior -->
   <a
     routerLink="/menu-category"
-    class="text-red-400 font-playfair hover:text-gray-200 mb-4 mt-8 inline-block"
+    class="text-red-600 font-playfair hover:text-gray-200 mb-4 mt-8 inline-block"
     >&larr; Regresar al menú anterior</a
   >
 
@@ -10,7 +10,7 @@
 
   <!-- Sección de Café Caliente -->
   <h2
-    class="text-2xl font-bold mb-4 font-playfair text-center bg-red-400 rounded-md"
+    class="text-2xl font-bold mb-4 font-playfair text-white text-center bg-red-600 rounded-md"
   >
     CAFÉ CALIENTE
   </h2>
@@ -23,7 +23,7 @@
         <h3 class="text-xl font-playfair text-black font-semibold">
           {{ cafeCaliente.nombre }}
         </h3>
-        <p class="text-red-400 text-lg font-lato">
+        <p class="text-red-600 text-lg font-lato">
           {{ cafeCaliente.precio | currency }}
         </p>
       </div>
@@ -33,7 +33,7 @@
   <!-- Sección de Café Helado -->
 
   <h2
-    class="text-2xl font-bold mb-4 font-playfair text-center bg-red-400 rounded-md"
+    class="text-2xl font-bold mb-4 font-playfair text-white text-center bg-red-600 rounded-md"
   >
     CAFÉ HELADO
   </h2>
@@ -75,11 +75,11 @@
           {{ platillo.descripcion }}
         </p>
 
-        <span class="text-red-400 text-lg font-lato mt-2">{{
+        <span class="text-red-600 text-lg font-lato mt-2">{{
           platillo.precio | currency
         }}</span>
         <br />
-        <span class="text-red-400 text-lg font-lato mt-2"
+        <span class="text-red-600 text-lg font-lato mt-2"
           >{{ platillo.precio2 | currency }}
           <p class="text-white font-lato text-sm">
             {{ platillo.descripcion2 }}
@@ -97,7 +97,7 @@
         <h3 class="text-xl font-playfair font-semibold text-black">
           {{ cafeHelado.nombre }}
         </h3>
-        <p class="text-red-400 text-lg font-lato">
+        <p class="text-red-600 text-lg font-lato">
           {{ cafeHelado.precio | currency }}
         </p>
       </div>

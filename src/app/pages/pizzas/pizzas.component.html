@@ -2,7 +2,7 @@
   <!-- Ancla para regresar al menú anterior -->
   <a
     routerLink="/menu-category"
-    class="text-red-400 font-notoserif hover:text-gray-200 mb-4 mt-8 inline-block"
+    class="text-red-600 font-notoserif hover:text-gray-200 mb-4 mt-8 inline-block"
     >&larr; Regresar al menú anterior</a
   >
 
@@ -27,13 +27,13 @@
           Armala a tu gusto
         </h2>
         <p class="text-black font-playfair">Máximo 4 ingredientes</p>
-        <p class="text-red-400 text-lg font-lato">$189.00</p>
+        <p class="text-red-600 text-lg font-lato">$189.00</p>
 
         <h2 class="text-xl font-bold text-black font-playfair mt-4">
           Pizza Personal
         </h2>
         <p class="text-black font-playfair">Máximo 4 ingredientes</p>
-        <p class="text-red-400 text-lg font-lato">$139.00</p>
+        <p class="text-red-600 text-lg font-lato">$139.00</p>
 
         <!-- Sección de sugerencias -->
         <div class="mt-6">
@@ -42,19 +42,19 @@
           </h3>
           <ul class="list-disc list-inside text-black font-lato mt-2 space-y-1">
             <li>
-              <strong class="text-red-400 font-playfair">Hawaiana:</strong>
+              <strong class="text-red-600 font-playfair">Hawaiana:</strong>
               Piña y jamón.
             </li>
             <li>
-              <strong class="text-red-400 font-playfair">Mexicana:</strong>
+              <strong class="text-red-600 font-playfair">Mexicana:</strong>
               Chilorio, chorizo, jalapeño y aguacate.
             </li>
             <li>
-              <strong class="text-red-400 font-playfair">Carnes:</strong>
+              <strong class="text-red-600 font-playfair">Carnes:</strong>
               Jamón, pepperoni, salchicha y tocino.
             </li>
             <li>
-              <strong class="text-red-400 font-playfair">Margarita:</strong>
+              <strong class="text-red-600 font-playfair">Margarita:</strong>
               Tomate y albahaca.
             </li>
           </ul>
@@ -103,12 +103,12 @@
           {{ platillo.descripcion }}
         </p>
         <p class="font-playfair">FAMILIAR</p>
-        <span class="text-red-400 text-lg font-lato mt-2">
+        <span class="text-red-600 text-lg font-lato mt-2">
           {{ platillo.precio | currency }}</span
         >
         <br />
         <p class="font-playfair">PERSONAL</p>
-        <span class="text-red-400 text-lg font-lato mt-2"
+        <span class="text-red-600 text-lg font-lato mt-2"
           >{{ platillo.precio2 | currency }}
           <p class="text-white font-lato text-sm">
             {{ platillo.descripcion2 }}
@@ -121,12 +121,12 @@
       <h2 class="text-3xl font-playfair mb-4">Ingredientes</h2>
       <p class="text-black font-semibold text-lg font-playfair mb-2">
         INGREDIENTE EXTRA
-        <span class="text-red-400 ml-2 font-lato">$17.00</span>
+        <span class="text-red-600 ml-2 font-lato">$17.00</span>
       </p>
       <ol class="flex list-disc flex-wrap gap-6">
         <li
           *ngFor="let ingrediente of ingredientes"
-          class="mb-2 text-lg text-red-400 font-lato"
+          class="mb-2 text-lg text-red-600 font-lato"
         >
           {{ ingrediente }}
         </li>
