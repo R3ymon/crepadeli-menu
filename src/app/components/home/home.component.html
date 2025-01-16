@@ -1,6 +1,6 @@
 <!-- Página de Inicio -->
 <div
-  class="relative h-screen w-screen bg-[url('/assets/images/bg/MENU.jpg')] bg-black overflow-hidden bg-cover bg-center md:bg-[url('/assets/images/bg/MENU.jpg')] lg:bg-[url('/assets/images/bg/menuxl.jpg')]"
+  class="relative h-screen w-screen bg-red-600 overflow-hidden bg-cover bg-center"
 >
   <!-- Contenido sobre el fondo negro -->
   <div
@@ -10,16 +10,38 @@
     }"
     class="relative z-10 flex flex-col items-center justify-center h-full text-center transition-opacity duration-1000 ease-out transform -translate-y-32"
   >
-    <!-- Logo dorado del restaurante sin glow -->
+    <!-- Logo del restaurante sin glow -->
     <img
       src="/assets/images/logo/logo.png"
       alt="Logo del Restaurante"
-      class="mb-6 w-40 h-auto md:w-56 lg:w-72"
+      class="w-40 h-auto md:w-56 lg:w-72"
     />
+
+    <!-- Contenedor de imágenes adicionales -->
+    <div class="flex justify-center gap-4 mt-4">
+      <!-- Imagen 1 -->
+      <img
+        src="/assets/images/logo/del-mar.webp"
+        alt="Descripción de la imagen 1"
+        class="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full"
+      />
+      <!-- Imagen 2 -->
+      <img
+        src="/assets/images/logo/deli-fusion.webp"
+        alt="Descripción de la imagen 2"
+        class="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full"
+      />
+      <!-- Imagen 3 -->
+      <img
+        src="/assets/images/logo/deli-oriental.webp"
+        alt="Descripción de la imagen 3"
+        class="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full"
+      />
+    </div>
 
     <!-- Encabezado principal "MENÚ" con efecto glow en blanco -->
     <h1
-      class="text-4xl md:text-6xl lg:text-7xl font-playfair text-white menu-glow"
+      class="text-4xl mt-10 md:text-6xl lg:text-7xl font-playfair text-white menu-glow"
     >
       M E N Ú
     </h1>
@@ -27,12 +49,24 @@
     <!-- Descripción en gris claro para menor importancia -->
     <p class="mt-4 text-xl md:text-2xl font-cinzel text-gray-300"></p>
 
-    <!-- Botón discreto en blanco con borde negro -->
+    <!-- Botones con tamaños uniformes -->
     <a
       routerLink="/menu-category"
-      class="font-lato mt-8 px-6 py-3 border-2 border-white text-white bg-transparent rounded-lg hover:bg-white hover:text-black transition"
+      class="font-lato mt-8 px-6 py-3 w-48 border-2 border-white text-white bg-transparent rounded-lg text-center hover:bg-white hover:text-black transition"
     >
-      Ver Menú
+      Menú Crepa Deli
+    </a>
+    <a
+      routerLink=""
+      class="font-lato mt-8 px-6 py-3 w-48 border-2 border-white text-white bg-transparent rounded-lg text-center hover:bg-white hover:text-black transition"
+    >
+      Menú Deli Mar
+    </a>
+    <a
+      routerLink=""
+      class="font-lato mt-8 px-6 py-3 w-48 border-2 border-white text-white bg-transparent rounded-lg text-center hover:bg-white hover:text-black transition"
+    >
+      Menú Deli Oriental
     </a>
   </div>
 
